@@ -1,0 +1,134 @@
+        body {
+            font-family: Arial;
+            margin: 0;
+            padding: 0;
+        }
+
+        #statusBar {
+            background: #333;
+            color: #fff;
+            padding: 6px 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #statusBar .left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        #statusBar span {
+            margin-right: 10px;
+        }
+
+        #statusIndicator {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #c00;
+            margin-left: 6px;
+            vertical-align: middle;
+        }
+
+        .tabs {
+            margin: 10px;
+        }
+
+        .tab {
+            display: inline-block;
+            padding: 5px 15px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            border-bottom: none;
+        }
+
+        .tab.active {
+            background: #eee;
+            font-weight: bold;
+        }
+
+        .tab-content {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 0 10px 10px 10px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 5px;
+            text-align: left;
+        }
+
+        th {
+            background: #eee;
+        }
+
+        input[type=text] {
+            margin: 2px;
+            padding: 3px;
+        }
+
+        button {
+            margin: 2px;
+            padding: 6px;
+        }
+
+        #logOutput {
+            height: 400px;
+            overflow: auto;
+            background: #f9f9f9;
+            padding: 10px;
+            white-space: pre-wrap;
+        }
+
+        .status-modal {
+            position: fixed;
+            left: 20px;
+            top: 60px;
+            width: 220px;
+            max-height: 80vh;
+            overflow: auto;
+            background: #fff;
+            border: 1px solid #888;
+            box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            display: none;
+            z-index: 2000;
+        }
+
+        .snapshot {
+            width: 150px;
+            height: 100px;
+            object-fit: cover;
+            border: 1px solid #ccc;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        .point-block {
+            border-bottom: 1px solid #eee;
+            padding: 6px 0;
+        }
+
+        .small-ind {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-right: 6px;
+            vertical-align: middle;
+        }
+
+        .status-modal[inert] {
+            display: none;
+            pointer-events: none;
+        }

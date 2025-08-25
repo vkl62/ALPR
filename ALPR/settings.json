@@ -1,0 +1,30 @@
+{
+  "mqtt": {
+    "host": "192.168.12.2",
+    "port": 1883,
+    "base_topic": "ALPR"
+  },
+  "cpai": {
+    "host": "192.168.12.11",
+    "port": 32168
+  },
+  "paths": {
+    "people_db": "people.db",
+    "points_db": "points.db",
+    "snapshots": "static/snapshots",
+    "base_db": "base.db"
+  },
+  "capture_interval": 0.2,
+  "cpai_min_interval": 2,
+  "debug": false,
+  "scale_before_jpeg": 0.75,
+  "use_torch_gpu_prep": false,
+  "ffmpeg_capture_options": {
+    "rtsp_transport": "tcp",
+    "stimeout": "5000000",
+    "max_delay": "500000",
+    "reorder_queue_size": "0",
+    "flags": "low_delay"
+  },
+  "cpai_workers": 6
+}
